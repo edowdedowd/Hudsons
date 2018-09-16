@@ -1,3 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-
+.nav-item .nav-link{
+	color: white !important;
+}
