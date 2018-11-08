@@ -18,7 +18,7 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-white">
 		<img src="./Hudsons/Hudsons_red.svg">
         <a style="color: darkred;" class="navbar-brand" href="#">Café</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,14 +26,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a style="color: darkred;" class="nav-link" href="#">Menu<span class="sr-only">(current)</span></a>
-            </li>
+            <li class="nav-item active"> <a class="nav-link" href="#"></a> </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Feedback</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Back to Mueller</a>
+              <a class="nav-link disabled" href="https://www.mueller.qld.edu.au#">Back to Mueller</a>
+				
             </li>
           </ul>
 </div>
@@ -45,16 +41,13 @@
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+</ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="first-slide" src="Hudsons/2017_MUSIC_Cafe-2.jpg" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-left">
-                <h1>Why Hudson's?</h1>
-                <p>Because we want you to love your food!</p>
+                <h1>Recieve weekly notifications!</h1>
                 <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
               </div>
             </div>
@@ -88,22 +81,62 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-<div class="col-sm-4">
+<div class="col-sm-12">
     <div class="card text-center">
-      <div class="card-body">
+      <div class="card-body align-content-center">
         <h5 class="card-title">Hudson's Menu</h5>
         <p class="card-text">Take a look at all our foods and drinks!</p>
         <a href="./menu.html" target="_blank" class="buttons">View Menu</a>
       </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 col-xl-11">
     <div class="card text-center">
-      <div class="card-body">
-		  <p> OPENING HOURS ____________ Weekdays: 8am - 4pm</p>
+      <div class="card-text">
+		  <p>OPENING HOURS</p>
+		  <p>Weekdays: 8am - 4pm</p>
 		</div>
 		</div>
 		</div>
 	</div>
 	  </div>
+	  
+<div class="container">
+    <div class="row content-row">
+        <div class="col-lg">
+            <h1>Feedback</h1>
+<form action="/contact-us/feedback/" method="post">                <div class="form-group">
+                    <p>
+                        <label for="Name">Your Name</label>
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                        <input class="form-control" data-val="true" data-val-required="* required" id="Name" name="Name" type="text" value="" />
+                    </p>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <label for="Email">Your Email</label>
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                        <input class="form-control" data-val="true" data-val-email="* invalid email" data-val-required="* required" id="Email" name="Email" type="text" value="" />
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="form-group">
+                            <p>
+                        <label for="Feedback">Your Feedback</label>
+                        <span class="field-validation-valid text-danger" data-valmsg-for="Feedback" data-valmsg-replace="true"></span>
+                        <textarea class="form-control" cols="1" data-val="true" data-val-required="* required" id="Feedback" name="Feedback" rows="3">
+</textarea>
+                    </p>
+                </div>
+
+                    <button class="btn btn-lg btn-outline-primary" type="submit" id="submit">Send</button>
+    </div>
+</div>
+
+
+
+
+
+
 <!-- empty comment -->
 
       <!-- Marketing messaging and featurettes
