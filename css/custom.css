@@ -3,3 +3,8 @@
 .nav-item .nav-link{
 	color: darkred !important;
 }
+
+.navbar-brand{
+	height:100px;
+	width:100px;
+}
